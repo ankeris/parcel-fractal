@@ -8,7 +8,7 @@ module.exports = {
     // watch: true,
 	entry: {
         global: glob.sync('./src/components/**/*.js'),
-        styles: glob.sync('./src/components/_base/_grid.css'),
+        styles: glob.sync('./src/components/**/*.css'),
 		// index: glob.sync('./public/js/manual/index/*.js'),
 		// products: glob.sync('./public/js/manual/products/*.js'),
 		// product: glob.sync('./public/js/manual/product/*.js')
