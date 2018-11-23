@@ -1,7 +1,11 @@
+@import './_fonts.css';
+@import './_variables.css';
+
+
 /**
  * Base
  */
-:root{
+:root {
     --site-background-color: var(--site-background-color, #fff)
 }
 
@@ -10,7 +14,9 @@
     box-sizing: border-box;
 
     &:before,
-    &:after {box-sizing: border-box;}
+    &:after {
+        box-sizing: border-box;
+    }
 }
 
 /* Body */
@@ -29,7 +35,9 @@ body {
     margin: 0;
     padding: 0;
 
-    @media (--viewport-lg-min) {font-size: 18px;}
+    @media (--viewport-lg-min) {
+        font-size: 18px;
+    }
 }
 
 /* Links */
@@ -39,7 +47,9 @@ a {
     text-decoration-skip: ink;
 
     &:hover,
-    &:focus { color: shade(var(--color-link, blue), 10%); }
+    &:focus {
+        color: shade(var(--color-link, blue), 10%);
+    }
 }
 
 /* Horizontal ruler */
@@ -66,5 +76,7 @@ figure {
         transition: opacity 0.2s;
     }
 
-    &.contain-width img { width: auto; }
+    &.contain-width img {
+        width: auto;
+    }
 }

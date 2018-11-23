@@ -1,5 +1,5 @@
 'use strict';
-const settings = require("../settings");
+const settings = require("./settings");
 const rootFolder = settings.root_folder;
 /* Create a new Fractal instance and export it for use elsewhere if required */
 const fractal = module.exports = require('@frctl/fractal').create();
